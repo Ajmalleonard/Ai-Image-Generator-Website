@@ -1,0 +1,232 @@
+* {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.content {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('assets/blackgreen.jpeg');
+    background-size: cover;
+}
+
+.content .container {
+    padding: 0px 80px;
+    color: white;
+    max-width: 900px;
+    text-align: center;
+
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+
+    margin-top: 20px;
+
+
+}
+
+.content form {
+    margin: 0px 30px;
+    height: 60px;
+    background-color: white;
+    padding: 0% 2%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content form #textinput {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+
+    font-size: 16px;
+}
+
+.controller {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.content form .slc {
+    outline: none;
+    border: none;
+
+
+    font-size: 1rem;
+    width: 50%;
+    height: 100%;
+}
+
+.content form .btn3 {
+    border-radius: 30px;
+}
+
+.img-gallery .img-card {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.img-gallery {
+    display: flex;
+    background-color: aliceblue;
+    gap: 15px;
+    max-width: 100%;
+    justify-self: center;
+    flex-wrap: wrap;
+
+    padding: 9% 3%;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.img-gallery .img-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.img-card .but {
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.img-card:not(.loading):hover .but {
+    display: flex;
+    transition: display 1s ease-out;
+}
+
+.img-gallery .loading img {
+    width: 80px;
+    height: 80px;
+
+}
+
+@media screen and (max-width: 760px) {
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    .content form .slc {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .content form #textinput {
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .content form {
+        display: block;
+        height: 45px;
+        align-items: end;
+        margin-top: 30px;
+
+
+    }
+
+    .content form .controller {
+        justify-content: flex-end;
+        height: 40px;
+        align-items: center;
+        width: 50%;
+        margin-top: 15px;
+
+
+    }
+
+    .content form .controller .btn3 {
+        border-radius: 10px;
+        height: 42px;
+        border: none;
+        background-color: white;
+        color: black;
+    }
+
+    .content form .controller .slc {
+        border-radius: 10px;
+        height: 42px;
+        width: 100%;
+        border: none;
+        background-color: white;
+        color: black;
+    }
+
+    .content .container {
+        padding: 0px 0px;
+        align-items: center;
+    }
+
+    .img-gallery .loading {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    #textinput {
+        font-size: 12px;
+    }
+
+    .img-gallery .img-card {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1/1;
+        position: relative;
+        background-color: white;
+        border-radius: 10px;
+
+    }
+
+    .img-gallery {
+        padding: 3%;
+    }
+}
