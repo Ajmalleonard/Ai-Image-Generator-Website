@@ -5,6 +5,7 @@ import Shop from "./pages/Shop";
 import ShopCategory from "./pages/shopCategory";
 import Product from "./pages/Product";
 import Cart from "./pages/cart";
+import LoginSignup from "./pages/LoginSignup";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path=":productId" element={<Product />} />
           </Route>{" "}
           <Route path="./cart" element={<Cart />} />
+          <Route path="./Login" element={<LoginSignup />} />
         </Routes>
       </BrowserRouter>
     </div>
