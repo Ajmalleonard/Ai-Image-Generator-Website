@@ -1,0 +1,109 @@
+.Nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 2px -2px black;
+}
+
+.Nav .nav-logo .logo {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+}
+
+.Nav .nav-logo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.Nav h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #626262;
+}
+
+.Nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    gap: 3px;
+    margin-bottom: 3px;
+}
+
+.Nav ul hr {
+    border: none;
+    background-color: #ff702d;
+    width: 90%;
+    height: 1px;
+    margin: 0;
+    border-radius: 10px;
+
+}
+
+.Nav ul li:hover {
+
+    color: teal;
+    transition: color 1s ease;
+    cursor: pointer;
+}
+
+.Nav .nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+}
+
+.Nav .nav-login-cart button {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    background-color: white;
+    font-weight: 600;
+    border: 1px solid #ff702d;
+    color: #ff702d;
+    border-radius: 70px;
+    cursor: pointer;
+}
+
+.Nav .nav-login-cart button:active {
+    color: white;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    background-color: #ff702d;
+}
+
+.Nav .nav-login-cart img {
+    width: 30px;
+    background-color: transparent;
+
+    padding: 20px;
+
+
+}
+
+.nav-login-cart .cart-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    font-size: 13px;
+    width: 22px;
+    color: white;
+    border-radius: 25px;
+    height: 22px;
+    margin-top: -33px;
+    margin-left: -73px;
+}
