@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="./" element={<Shop />} />
+          <Route path="/" element={<Shop />} />
           <Route path="./men" element={<ShopCategory category="men" />} />
           <Route path="./women" element={<ShopCategory category="women" />} />
           <Route path="./kids" element={<ShopCategory category="kids" />} />
@@ -21,7 +21,7 @@ function App() {
             <Route path=":productId" element={<Product />} />
           </Route>{" "}
           <Route path="./cart" element={<Cart />} />
-          <Route path="./Login" element={<LoginSignup />} />
+          <Route path="./login" element={<LoginSignup />} />
         </Routes>
       </BrowserRouter>
     </div>
