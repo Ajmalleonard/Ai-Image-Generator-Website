@@ -32,7 +32,7 @@ const NavBar = () => {
         >
           <Link style={{ textDecoration: "none", color: "black" }} to="/men">
             Men
-          </Link>{" "}
+          </Link>
           {underline === "men" ? <hr /> : <></>}
         </li>
         <li

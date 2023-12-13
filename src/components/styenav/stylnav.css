@@ -1,0 +1,32 @@
+hr {
+  border: none;
+  background-color: #ff702d;
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  border-radius: 10px;
+}
+.StyleNav {
+  background-color: aliceblue;
+  padding: 1% 0%;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+}
+
+img {
+  width: 20px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 748px) {
+  .StyleNav {
+    background-color: aliceblue;
+    padding: 7% 4%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+}

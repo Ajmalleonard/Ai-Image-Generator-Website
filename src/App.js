@@ -6,12 +6,14 @@ import ShopCategory from "./pages/shopCategory";
 import Product from "./pages/Product";
 import Cart from "./pages/cart";
 import LoginSignup from "./pages/LoginSignup";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import Stynav from "./components/styenav/stynav";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar />
+
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route path="./men" element={<ShopCategory category="men" />} />

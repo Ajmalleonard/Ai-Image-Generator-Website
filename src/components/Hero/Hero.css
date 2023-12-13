@@ -1,5 +1,34 @@
-.hero{
-    height: 100vh;
-    background: linear-gradient(180deg, #FDF2F0, #F89999, 50%);
+* {
+  padding: 0 !important;
+}
+
+.hero {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+
+  padding: 0 !important;
+  align-items: center;
+  background-color: rgb(156, 118, 118);
+}
+
+.hero .hero-holder img {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media screen and (max-width: 848px) {
+  .hero {
+    padding: 0 !important;
+    height: fit-content;
     display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: red;
+    max-width: 100%;
+    width: 100% !important;
+    margin-top: 0;
+  }
 }

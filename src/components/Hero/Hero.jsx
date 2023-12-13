@@ -1,17 +1,18 @@
 import React from "react";
 import "./Hero.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import img from "../assets/revolve_banner.webp";
+
+import { Container, Row, Col } from "react-bootstrap";
 import handicon from "../assets/hand_icon.png";
+import heroimg from "../assets/hero_image.png";
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="hero-left">
-        <h2>Let Hot Style Speak For You </h2>
-        <div className="hand-icon">
-          <img src={handicon} alt="" />
-        </div>
-      </div>
-      <div className="hero-right"></div>
-    </div>
+    <Container fluid className="hero">
+      <Container fluid className=" hero-holder">
+        <img src={img} alt="" />
+      </Container>
+    </Container>
   );
 };
 
